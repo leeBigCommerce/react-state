@@ -87,11 +87,11 @@ export const App: React.FC = () => (
                     <ul>
                         <li>
                             Create the API you wish you had by creating a custom hook which (potentially) uses
-                            useReducer under the hood
+                            useReducer under the hood OR consider using Redux with a store specific to that entity.
                         </li>
                         <li>
                             Remember to aim for as much decoupling as possible between your custom hook and your visual
-                            components
+                            components.
                         </li>
                         <li>
                             You might want to consider persisting this complex state somewhere - what if your user
