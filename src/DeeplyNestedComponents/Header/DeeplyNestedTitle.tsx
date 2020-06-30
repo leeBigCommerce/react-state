@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { buttonClickedContext } from '../buttonClickedContext';
+import { useButtonClicked } from '../buttonClicked';
 
 export const DeeplyNestedTitle: React.FC = () => {
-    const { buttonClicked } = React.useContext(buttonClickedContext);
+    const { buttonClicked } = useButtonClicked();
 
     return <h1>{buttonClicked ? 'Thank you' : 'Please click the button'}</h1>;
 };

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { buttonClickedContext } from '../buttonClickedContext';
+import { useButtonClicked } from '../buttonClicked';
 
 export const DeeplyNestedUserActions: React.FC = () => {
-    const { buttonClicked, clickButton } = React.useContext(buttonClickedContext);
+    const { buttonClicked, clickButton } = useButtonClicked();
 
     return clickButton ? (
         <button disabled={buttonClicked} onClick={clickButton}>
