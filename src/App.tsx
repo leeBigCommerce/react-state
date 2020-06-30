@@ -17,6 +17,9 @@ export const App: React.FC = () => (
             </ul>
             <h3>Example:</h3>
             <SingleComponentState />
+            <p>
+                (see &quot;<code>./src/SingleComponentState</code>&quot; for code)
+            </p>
             <hr />
             <h2>2. When multiple components require that state:</h2>
             <ul>
@@ -25,6 +28,9 @@ export const App: React.FC = () => (
             </ul>
             <h3>Example:</h3>
             <OneLevelOfNesting />
+            <p>
+                (see &quot;<code>./src/OneLevelOfNesting</code>&quot; for code)
+            </p>
             <hr />
             <h2>3. When multiple components require that state, but are deeply nested:</h2>
             <ul>
@@ -40,6 +46,9 @@ export const App: React.FC = () => (
             </ul>
             <h3>Example:</h3>
             <FlattenedComponentTree />
+            <p>
+                (see &quot;<code>./src/FlattenedComponentTree</code>&quot; for code)
+            </p>
             <hr />
             <h2>
                 4. When multiple components require that state, are deeply nested and you&apos;ve somehow reached the
@@ -52,6 +61,9 @@ export const App: React.FC = () => (
             </ul>
             <h3>Example:</h3>
             <DeeplyNestedComponents />
+            <p>
+                (see &quot;<code>./src/DeeplyNestedComponents</code>&quot; for code)
+            </p>
             <hr />
         </section>
         <section>
