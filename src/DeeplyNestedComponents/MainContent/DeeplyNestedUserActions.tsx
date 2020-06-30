@@ -5,9 +5,9 @@ import { useButtonClicked } from '../buttonClicked';
 export const DeeplyNestedUserActions: React.FC = () => {
     const { buttonClicked, clickButton } = useButtonClicked();
 
-    return clickButton ? (
+    return (
         <button disabled={buttonClicked} onClick={clickButton}>
             Click Me
         </button>
-    ) : null;
+    );
 };
