@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { DeeplyNestedTitle } from './DeeplyNestedTitle';
-import { DeeplyNestedUserActions } from './DeeplyNestedUserActions';
 import { Header } from './Header';
 import { MainContent } from './MainContent';
 import { buttonClickedContext } from './buttonClickedContext';
@@ -12,12 +10,8 @@ export const Example: React.FC = () => {
 
     return (
         <buttonClickedContext.Provider value={{ buttonClicked, clickButton }}>
-            <Header>
-                <DeeplyNestedTitle />
-            </Header>
-            <MainContent>
-                <DeeplyNestedUserActions />
-            </MainContent>
+            <Header />
+            <MainContent />
         </buttonClickedContext.Provider>
     );
 };
