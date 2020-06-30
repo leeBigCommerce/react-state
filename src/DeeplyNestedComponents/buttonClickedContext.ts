@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 interface ButtonClickedContextValue {
-  buttonClicked: boolean;
-  clickButton?: () => void;
+    buttonClicked: boolean;
+    clickButton?: () => void;
 }
 
 const defaultButtonClickedContextValue: ButtonClickedContextValue = { buttonClicked: false };

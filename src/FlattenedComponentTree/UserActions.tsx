@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
 export const UserActions: React.FC<{ buttonClicked: boolean; onButtonClick(): void }> = ({
-  buttonClicked,
-  onButtonClick,
+    buttonClicked,
+    onButtonClick,
 }) => (
-  <button disabled={buttonClicked} onClick={onButtonClick}>
-    Click Me
-  </button>
+    <button disabled={buttonClicked} onClick={onButtonClick}>
+        Click Me
+    </button>
 );
