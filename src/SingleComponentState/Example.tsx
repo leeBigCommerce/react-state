@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Example: React.FC = () => {
     const [buttonClicked, setButtonClicked] = React.useState(false);
-    const clickButton = () => setButtonClicked(true);
+    const clickButton = (): void => setButtonClicked(true);
 
     return (
         <>
