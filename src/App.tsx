@@ -90,8 +90,8 @@ export const App: React.FC = () => (
                             useReducer under the hood OR consider using Redux with a store specific to that entity.
                         </li>
                         <li>
-                            Remember to aim for as much decoupling as possible between your custom hook and your visual
-                            components.
+                            Remember to aim for as much decoupling as possible between your chosen solution and your
+                            visual components.
                         </li>
                         <li>
                             You might want to consider persisting this complex state somewhere - what if your user
