@@ -1,6 +1,6 @@
 # The Gist
 
-This repo is an exploration of the different state solutions in a React app.
+This repo is an exploration of the different possible state solutions in a React app.
 
 Below is a set of ever more complicated state related problems paired with example solutions and commentary.
 
@@ -52,7 +52,7 @@ Solutions have been selected on the basis of:
 ### Comments
 
 -   Your child components will re-render with any change to that state value from the parent.
--   Your child components can be written to simple functional components, agnostic to the source of their prop values.
+-   Your child components can be written as simple functional components, agnostic to the source of their prop values.
 
 ---
 
