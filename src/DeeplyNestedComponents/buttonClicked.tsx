@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 
 interface ButtonClickedPayload {
     buttonClicked: boolean;
-    clickButton?: () => void;
+    clickButton: () => void;
 }
 
 const buttonClickedContext = React.createContext<ButtonClickedPayload | undefined>(undefined);
