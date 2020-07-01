@@ -31,7 +31,7 @@ Solutions have been selected on the basis of:
 -   Hooks over classes is a debate for another time
 -   Invoking `useState` in the _lowest possible_ scope helps towards a separation of concerns
 
---
+---
 
 ## Problem Two
 
@@ -54,7 +54,7 @@ Solutions have been selected on the basis of:
 -   Your child components will re-render with any change to that state value from the parent.
 -   Your child components can be written to simple functional components, agnostic to the source of their prop values.
 
---
+---
 
 ## Problem Three
 
@@ -80,7 +80,7 @@ Solutions have been selected on the basis of:
 -   'Prop Drilling' is an anti-pattern sometimes used to solve this problem. However, it wrongly forces intermediatory components to require values _only_ to pass on them down the tree. Components should only require values (through props) which directly work towards them realising their specific use case.
 -   The existence of multiple components, each needing the same value(s), but being in wildly different positions in the component tree is a code smell. It points to either a repo architectural issue or a UX issue that could benefit from refactoring.
 
---
+---
 
 ## Problem Four
 
@@ -107,7 +107,7 @@ Solutions have been selected on the basis of:
 -   `context` is React's solution passing things around without using props
 -   As we're now chaining a few different techniques together (`useState`, `createContext`, `useContext`) to achieve a singular aim, it's good practice to hide these away as implementation details behind a more concise API (as done in our example).
 
---
+---
 
 ## Available Scripts
 
