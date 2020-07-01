@@ -105,7 +105,7 @@ Solutions have been selected on the basis of:
 ### Comments
 
 -   `context` is React's solution passing things around without using props
--   As we're now chaining a few different techniques together (`useState`, `createContext`, `useContext`) to achieve a singular aim, it's good practice to hide these away as implementation details behind a more concise API (as done in our example).
+-   As we're now chaining a few different techniques together (`useState`, `createContext`, `useContext`) to achieve a singular aim, it's good practice to hide these away as implementation details behind a more concise API (as done in our example). We can also defend that API and its aims from regression by covering it with its own specific tests.
 
 ---
 
