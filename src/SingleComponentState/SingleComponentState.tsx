@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Example: React.FC = () => {
+export const SingleComponentState: React.FC = () => {
     const [buttonClicked, setButtonClicked] = React.useState(false);
     const clickButton = (): void => setButtonClicked(true);
 

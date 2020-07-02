@@ -1,1 +1,1 @@
-export { Example } from './Example';
+export { FlattenedComponentTree } from './FlattenedComponentTree';

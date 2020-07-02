@@ -1,10 +1,28 @@
-import React from 'react';
+import React, { FC, StrictMode } from 'react';
 import ReactDOM from 'react-dom';
-import { App } from './App';
+
+import { allExamples } from './allExamples';
+
+const Examples: FC = () => (
+    <>
+        {allExamples.map(([name, Component]) => (
+            <>
+                <section>
+                    <h1>{name} Example</h1>
+                    <Component />
+                    <p>
+                        (see &quot;<code>./src/{name}</code>&quot; for code)
+                    </p>
+                </section>
+                <hr />
+            </>
+        ))}
+    </>
+);
 
 ReactDOM.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>,
+    <StrictMode>
+        <Examples />
+    </StrictMode>,
     document.getElementById('root'),
 );

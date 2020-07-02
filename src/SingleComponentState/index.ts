@@ -1,1 +1,1 @@
-export { Example } from './Example';
+export { SingleComponentState } from './SingleComponentState';

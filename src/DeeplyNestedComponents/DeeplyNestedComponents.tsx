@@ -4,7 +4,7 @@ import { Header } from './Header';
 import { MainContent } from './MainContent';
 import { ButtonClickedProvider } from './buttonClicked';
 
-export const Example: React.FC = () => (
+export const DeeplyNestedComponents: React.FC = () => (
     <ButtonClickedProvider>
         <Header />
         <MainContent />
