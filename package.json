@@ -18,7 +18,7 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "test": "echo \"No tests here, buddy...\"",
+        "test": "react-scripts test",
         "eject": "react-scripts eject",
         "lint": "eslint '*/**/*.{js,ts,tsx}' --fix"
     },
@@ -38,9 +38,11 @@
         ]
     },
     "devDependencies": {
+        "@testing-library/react-hooks": "^3.3.0",
         "eslint-config-prettier": "^6.11.0",
         "eslint-plugin-prettier": "^3.1.4",
         "eslint-plugin-react": "^7.20.2",
-        "prettier": "^2.0.5"
+        "prettier": "^2.0.5",
+        "react-test-renderer": "^16.13.1"
     }
 }
