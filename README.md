@@ -120,38 +120,39 @@ Though only a little more complex, the following are a few example implementatio
 1. Multiple component needs to keep track of a singular counter value
 2. They also need to be able to increment and decrement that counter value by any given number
 
-As we don't want to leak implementation details everywhere, they'll all end up with the simplest possible API:`{ count, increment, decrement } = useCounter()`. This will allow us to look "under the hood" of these implementations to compare and contrast.
+As we don't want to leak implementation details everywhere, they'll all implement the simplest possible API:
+```JSX
+const { count, increment, decrement } = useCounter();
+```
+This will allow us to look "under the hood" of these implementations to compare and contrast.
 
 ---
 
 ## 1. Custom Hook Counter
 
-- _Implementation complete_
 - _Commentary coming soon_
 
 ### Example
 
-`src/etc/counter/UsingCustomHook`
+`src/etc/counter/customHook`
 
 ---
 
 ## 2. useReducer Counter
 
-- _Implementation incomplete_
 - _Commentary coming soon_
 
 ### Example
 
-`src/etc/counter/UsingReducer`
+`src/etc/counter/useReducer`
 
 ## 3. Redux Hooks Counter
 
-- _Implementation complete_
 - _Commentary coming soon_
 
 ### Example
 
-`src/etc/counter/UsingReduxHooks`
+`src/etc/counter/reduxHooks`
 
 ---
 

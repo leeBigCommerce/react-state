@@ -1,1 +1,0 @@
-export { UsingReduxHooks } from './UsingReduxHooks';

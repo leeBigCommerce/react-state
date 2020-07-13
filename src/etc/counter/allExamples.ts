@@ -1,13 +1,18 @@
 import { FC } from 'react';
 
-import { UsingCustomHook } from './UsingCustomHook';
-import { UsingReducer } from './UsingReducer';
-import { UsingReduxHooks } from './UsingReduxHooks';
+import * as customHook from './customHook';
+import * as useReducer from './useReducer';
+import * as reduxHooks from './reduxHooks';
 
-type Example = [string, FC];
+interface API {
+    useCounter: () => { count: number; increment(num: number): void; decrement(num: number): void };
+    CounterProvider: FC;
+}
+
+type Example = [string, API];
 
 export const allExamples: Example[] = [
-    ['UsingCustomHook', UsingCustomHook],
-    ['UsingReducer', UsingReducer],
-    ['UsingReduxHooks', UsingReduxHooks],
+    ['customHook', customHook],
+    ['useReducer', useReducer],
+    ['reduxHooks', reduxHooks],
 ];
