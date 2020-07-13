@@ -113,19 +113,21 @@ Solutions have been selected on the basis of:
 
 The above examples all use a very simple example of state. It could be fairly argued that they are more concerned with _how_ that state is passed around, rather than how it is implemented.
 
-Though only a little more complex, the following are a few example implementations of the classic 'counter' example used by most libraries and tutorials. N.B. the Redux example makes it look like such a poor fit that either the implementation is poor or the requirements are not complex enough to justify using it.
+Though only a little more complex, the following are a few example implementations of the classic 'counter' example used by most libraries and tutorials.
 
 ### Requirements
 
 1. Multiple component needs to keep track of a singular counter value
 2. They also need to be able to increment and decrement that counter value by any given number
 
+As we don't want to leak implementation details everywhere, they'll all end up with the simplest possible API:`{ count, increment, decrement } = useCounter()`. This will allow us to look "under the hood" of these implementations to compare and contrast/
+
 ---
 
 ## 1. Custom Hook Counter
 
-- Super minimal, readable API: `{ count, increment, decrement } = useCounter()`
-- Very similar Provider/hook pattern as used in `src/DeeplyNestedComponents`
+- _Implementation complete_
+- _Commentary coming soon_
 
 ### Example
 
@@ -135,9 +137,8 @@ Though only a little more complex, the following are a few example implementatio
 
 ## 2. useReducer Counter
 
-- More fragmented API, consumers now need to self assemble their increment and decrement methods (e.g. `dispatch({ type: CounterActionsTypes.INCREMENT, payload: 37 })`)
-- Implementation details of the counter have leaked out into the consumer, leaving them more coupled
-- Arguably you could instead reveal the same API as the custom hook (e.g. `{ count, increment, decrement } = useCounter()`) and use the reducer pattern within to fulfill it, however even this would feel like overkill for the requirements at hand
+- _Implementation incomplete_
+- _Commentary coming soon_
 
 ### Example
 
@@ -145,10 +146,8 @@ Though only a little more complex, the following are a few example implementatio
 
 ## 3. Redux Hooks Counter
 
-- _Either my implementation is bad, or this is a terrible fit for such simple requirements_
-- Requires two packages: `redux` and `react-redux`
-- Even more fragmented API: the consumer needs `useSelector` and `useDispatch` from `react-redux`, plus  `CounterProvider` and `CounterActionsTypes` from our counter API to then self assemble the `increment` and `decrement` methods
-- Again, you could instead reveal the same API as the custom hook with Redux just used under the hood
+- _Implementation incomplete_
+- _Commentary coming soon_
 
 ### Example
 
