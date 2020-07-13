@@ -146,7 +146,7 @@ As we don't want to leak implementation details everywhere, they'll all end up w
 
 ## 3. Redux Hooks Counter
 
-- _Implementation incomplete_
+- _Implementation complete_
 - _Commentary coming soon_
 
 ### Example
