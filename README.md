@@ -120,7 +120,7 @@ Though only a little more complex, the following are a few example implementatio
 1. Multiple component needs to keep track of a singular counter value
 2. They also need to be able to increment and decrement that counter value by any given number
 
-As we don't want to leak implementation details everywhere, they'll all end up with the simplest possible API:`{ count, increment, decrement } = useCounter()`. This will allow us to look "under the hood" of these implementations to compare and contrast/
+As we don't want to leak implementation details everywhere, they'll all end up with the simplest possible API:`{ count, increment, decrement } = useCounter()`. This will allow us to look "under the hood" of these implementations to compare and contrast.
 
 ---
 
