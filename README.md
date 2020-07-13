@@ -121,9 +121,23 @@ Though only a little more complex, the following are a few example implementatio
 2. They also need to be able to increment and decrement that counter value by any given number
 
 As we don't want to leak implementation details everywhere, they'll all implement the simplest possible API:
+
+#### CounterProvider
+
+```JSX
+const App: FC = () => (
+    <CounterProvider>
+        <ComponentThatNeedsTheCounter />
+    </CounterProvider>
+);
+```
+
+#### useCounter
+
 ```JSX
 const { count, increment, decrement } = useCounter();
 ```
+
 This will allow us to look "under the hood" of these implementations to compare and contrast.
 
 ---
